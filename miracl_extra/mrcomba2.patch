@@ -1,0 +1,15 @@
+--- miracl/source/mrcomba2.tpl	2015-02-26 19:23:20.000000000 -0500
++++ miracl/source/mrcomba2.tpl.new	2015-02-26 19:31:13.000000000 -0500
+@@ -67,12 +67,8 @@
+ 
+ #ifdef MR_COMBA2
+ 
+-#ifdef MR_WIN64
+-#if _MSC_VER>=1500
+ #define MR_PCLMULQDQ
+ #include <wmmintrin.h>
+-#endif
+-#endif
+ 
+ /* NOTE! z must be distinct from x and y */
+ 
